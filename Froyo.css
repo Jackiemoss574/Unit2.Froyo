@@ -1,0 +1,63 @@
+body {
+    background-color: rgba(221, 162, 152);
+    font-family: 'Arial', sans-serif; /* Or any font you prefer */
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba (221, 162, 152);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000; /* Ensure it stays above other content */
+    text-align: center;
+}
+
+.flavorpointer{text-align: center;}
+
+.flavors-box {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+    justify-content: center; /* Centers items when there's extra space */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.flavors-list {
+    display: flex; /* This will display list items in a row */
+    justify-content: space-around; /* Distributes space around items */
+    flex-wrap: wrap; /* Wraps items to the next line if there's no more space */
+    padding: 0;
+    margin: 0;
+    list-style-type: decimal; /* Default numbering for ordered list */
+    width: 100%; /* Ensures the list takes full width of its container */
+}
+
+.flavors-list li {
+    margin: 10px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Removed counter styles */
+}
+.order-results {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    min-height: 100px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Adjust as needed */
+    text-align: center;
+}
