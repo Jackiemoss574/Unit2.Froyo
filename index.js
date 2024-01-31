@@ -4,8 +4,8 @@ let flavorQuantities = {
   coffee: 0,
   mudpie: 0,
   blueberry: 0,
-  redVelvet: 0,
-  orangeSherbert: 0
+  redvelvet: 0,
+  orangesherbert: 0
 };
 
 function addFlavor(flavor) {
@@ -29,3 +29,19 @@ function resetFlavors() {
   }
 }
 
+function showOrderSummary() {
+  let summaryText = '';
+  let totalQuantity = 0;
+  for (let flavor in flavorQuantities) {
+      totalQuantity += flavorQuantities[flavor];
+      if (flavorQuantities[flavor] > 0) {
+          summaryText += `${flavor.charAt(0).toUpperCase() + flavor.slice(1)}: ${flavorQuantities[flavor]} \n`;
+      }
+  }
+  summaryText += `Total: ${totalQuantity}`;
+  document.getElementById('orderSummary').innerText = summaryText;
+}
+window.onload = function() {
+  let userFlavors = prompt("Enter your desired froyo flavors, separated by commas:");
+  // Process the userFlavors string as needed
+};
