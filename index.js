@@ -42,6 +42,6 @@ function showOrderSummary() {
   document.getElementById('orderSummary').innerText = summaryText;
 }
 window.onload = function() {
-  let userFlavors = prompt("Enter your desired froyo flavors, separated by commas:");
+  let userFlavors = prompt("Enter your favorite flavor below:");
   // Process the userFlavors string as needed
 };

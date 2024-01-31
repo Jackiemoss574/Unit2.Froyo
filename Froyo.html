@@ -10,9 +10,10 @@
     <script src="index.js"></script>
     <header class="sticky-header">
         <h1 class="Wheader">Welcome to Jay's Froyo shop</h1>
-        <p class="instruction">In the prompt above enter the flavor of the frozen yogurt you desire by flavor. 
-            Please make sure to separate each flavor by a comma (,) or your input may not be recognized.</p>
-        <p class="example1">Example: vanilla, chocolate, strawberry, coffee, coffee</p>
+        <p class="instruction">In the prompt above enter the flavor of the frozen yogurt you like best. 
+            Bellow each addition of 1 equals one scoop of flavor use the add or subtract to order the 
+            desired number of each flavor. When you are done click the order button below</p>
+         
         <p>The machine will take your choice(s) and show you a list of what you have ordered.</p>
     </header>
 
@@ -76,6 +77,8 @@
             <p>Here's what we show you have ordered:</p>
             <!-- This div will be used to display the order results -->
             <div id="orderResults">Order Results below.</div>
+            <button onclick="showOrderSummary()">Place Order</button>
+<div id="orderSummary"></div>
         </section>
     </main>
 </body>
