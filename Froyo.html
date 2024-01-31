@@ -14,6 +14,7 @@
         <p class="example1">Example: vanilla, chocolate, strawberry, coffee, coffee</p>
         <p>The machine will take your choice(s) and show you a list of what you have ordered.</p>
     </header>
+
     <main>
         <p class="flavorpointer">Here are our current flavors below:</p>
         <section class="flavors-box">
@@ -28,13 +29,53 @@
             </ol>
         </section>
 
-<section class="order-results">
-    <p>Here's what we show you have ordered:</p>
-    <!-- This div will be used to display the order results -->
-    <div id="orderResults">Order Results below.</div>
-</section>
+        <!-- Buttons and Quantity Display Section -->
+        <section id="flavor-controls">
+            <!-- Repeat for each flavor -->
+            <div class="flavor-control" id="vanilla-control">
+                <span class="quantity" id="quantity-vanilla">0</span>
+                <button onclick="addFlavor('vanilla')">+</button>
+                <button onclick="subtractFlavor('vanilla')">-</button>
+            </div>
+            <div class="flavor-control" id="strawberry-control">
+                <span class="quantity" id="quantity-strawberry">0</span>
+                <button onclick="addFlavor('strawberry')">+</button>
+                <button onclick="subtractFlavor('strawberry')">-</button>
+            </div>
+            <div class="flavor-control" id="coffee-control">
+                <span class="quantity" id="quantity-coffee">0</span>
+                <button onclick="addFlavor('coffee')">+</button>
+                <button onclick="subtractFlavor('coffee')">-</button>
+            </div>
+            <div class="flavor-control" id="mudpie-control">
+                <span class="quantity" id="quantity-mudpie">0</span>
+                <button onclick="addFlavor('mudpie')">+</button>
+                <button onclick="subtractFlavor('mudpie')">-</button>
+            </div>
+            <div class="flavor-control" id="blueberry-control">
+                <span class="quantity" id="quantity-blueberry">0</span>
+                <button onclick="addFlavor('blueberry')">+</button>
+                <button onclick="subtractFlavor('blueberry')">-</button>
+            </div>
+            <div class="flavor-control" id="red velvet-control">
+                <span class="quantity" id="quantity-red velvet">0</span>
+                <button onclick="addFlavor('red velvet')">+</button>
+                <button onclick="subtractFlavor('red velvet')">-</button>
+            </div>
+            <div class="flavor-control" id="orange sherbert-control">
+                <span class="quantity" id="quantity-orange sherbert">0</span>
+                <button onclick="addFlavor('orange sherbert')">+</button>
+                <button onclick="subtractFlavor('orange sherbert')">-</button>
+            </div>
+            <!-- ... Other flavors ... -->
+            <button onclick="resetFlavors()">Reset All Flavors</button>
+        </section>
 
-
+        <section class="order-results">
+            <p>Here's what we show you have ordered:</p>
+            <!-- This div will be used to display the order results -->
+            <div id="orderResults">Order Results below.</div>
+        </section>
     </main>
 </body>
 </html>
